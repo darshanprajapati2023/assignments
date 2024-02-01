@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 350px;
+    background-color: white;
+}
+.card .c1{
+    background-color: black;
+    padding: 65px;
+    color: white;
+}
+.card .c1 p{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    text-align: center;
+}
+.card .c_contain{
+    text-align: center;
+    padding: 10px;
+}
+.card .c_contain .btn{
+    display: flex;
+    justify-content: space-between;
+}
+.card-main{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.mainbg{
+    margin: 30px;
+    background-color:aliceblue;
+}
+
+.card .btn .main button{
+    padding: 2px 10px 2px 10px;
+}
