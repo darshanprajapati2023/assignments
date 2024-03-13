@@ -1,0 +1,36 @@
+<!-- Q.7 Check if typeof '10' is exactly equal to 10. If not make it exactly equal? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- In JavaScript, the typeof operator returns a string indicating the type of the operand. 
+    If you want to check if thetypeof '10' is exactly equal to 10 and if not, convert it to 
+    a number, you can do it like this: -->
+
+    <script type="text/javascript">
+        let value = '10';
+
+        if (typeof value === 'string' && !isNaN(Number(value))) {
+            value = Number(value);
+        }
+
+        console.log(value);
+
+    </script>
+
+    <!-- This code checks if the type of value is a string and if converting it to a number doesn't result 
+    in NaN (not-a-number).If both conditions are true, it converts value to a number. So, in this case, 
+    '10' would be converted to 10. If value is already a number or cannot be converted to a number, 
+    it remains unchanged. -->
+
+</body>
+
+</html>
