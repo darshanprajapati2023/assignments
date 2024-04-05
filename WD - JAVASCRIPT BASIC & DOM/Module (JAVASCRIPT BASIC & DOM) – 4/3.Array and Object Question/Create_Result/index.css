@@ -1,0 +1,49 @@
+.marksheet {
+    border: solid 1px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 13px;
+    margin: 0 0 0 20px;
+}
+
+.subtitle {
+    font-size: 11px;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.subject {
+    margin-bottom: 10px;
+}
+
+.subject label {
+    display: inline-block;
+    width: 200px;
+    margin: 0 0 0 20px;
+}
+
+.subject input {
+    width: 250px;
+}
+
+.result {
+    padding: 0 0 0 225px;
+}
+
+.result button {
+    width: 100px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.total span {
+    padding: 0 0 0 100px;
+}

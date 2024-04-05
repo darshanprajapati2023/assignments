@@ -1,0 +1,45 @@
+.slider-container {
+    width: 70%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 100px 0 0 0;
+}
+
+.slide {
+    min-width: 25%;
+    /* width: 250px; */
+    height: 250px;
+    flex: 1;
+    text-align: center;
+    margin: 0 20px 0 20px;
+    /* padding: 20px; */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
