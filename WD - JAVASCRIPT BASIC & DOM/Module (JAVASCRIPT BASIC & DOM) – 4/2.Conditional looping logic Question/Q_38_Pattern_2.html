@@ -1,0 +1,45 @@
+<!-- Q.38 Use pattern in console.log in JS?
+2) 
+A
+B C
+D E F
+G H I J
+K L M N O -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        const numRows = 5;
+
+
+        let startAscii = 65;
+
+
+        for (let i = 0; i < numRows; i++) {
+            let row = '';
+
+
+            for (let j = 0; j <= i; j++) {
+                row += String.fromCharCode(startAscii) + ' ';
+                startAscii++;
+            }
+
+
+            console.log(row);
+        }
+
+    </script>
+
+</body>
+
+</html>

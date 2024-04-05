@@ -1,0 +1,45 @@
+<!-- Q.38 Use pattern in console.log in JS?
+1) 
+1
+1 0
+1 0 1
+1 0 1 0
+1 0 1 0 1 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        const numRows = 5;
+
+
+        for (let i = 1; i <= numRows; i++) {
+            let row = '';
+
+
+            for (let j = 1; j <= i; j++) {
+                if (j % 2 === 0) {
+                    row += '0 ';
+                } else {
+                    row += '1 ';
+                }
+            }
+
+
+            console.log(row);
+        }
+
+    </script>
+
+</body>
+
+</html>
