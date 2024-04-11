@@ -1,0 +1,13 @@
+{
+  "name": "q_4_create_require_collection_for_online_shopping_app",
+  "version": "1.0.0",
+  "description": "This is nodejs assignment",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Darshan Prajapati",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^4.0.0"
+  }
+}

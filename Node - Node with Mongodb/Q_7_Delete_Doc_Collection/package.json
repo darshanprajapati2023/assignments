@@ -1,0 +1,13 @@
+{
+  "name": "q_7_delete_doc_collection",
+  "version": "1.0.0",
+  "description": "This is nodejs assignment",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Darshan Prajapati",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^4.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "q_5_show_all_data_ascending_order",
+  "version": "1.0.0",
+  "description": "This is nodejs assignment",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Darshan Prajapati",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^4.0.0"
+  }
+}
