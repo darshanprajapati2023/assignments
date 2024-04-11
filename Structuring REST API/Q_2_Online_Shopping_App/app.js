@@ -43,7 +43,7 @@ app.post("/products", (req, res, next) => {
         if (db) {
             db.collection("Products").insertOne(req.body)
                 .then((productData) => res.status(202).json({ data: productData }))
-                .catch(e => res.status(500).json({ error: "Internal Server Error - Failed To Delete Task" }))
+                .catch(e => res.status(500).json({ error: "Internal Server Error - Failed To Delete Product" }))
         } else {
             res.status(500).json({ error: "Internal Server Error" })
         }
@@ -60,7 +60,7 @@ app.delete('/products/:id', (req, res, next) => {
         if (db) {
             db.collection("Products").deleteOne({ "_id": new ObjectId(req.params.id) })
                 .then((productData) => res.status(202).json({ data: productData }))
-                .catch(e => res.status(500).json({ error: "Internal Server Error - Failed To Delete Task" }))
+                .catch(e => res.status(500).json({ error: "Internal Server Error - Failed To Delete Product" }))
         } else {
             res.status(500).json({ error: "Internal Server Error" })
         }
@@ -79,7 +79,7 @@ app.put('/products/:id', (req, res, next) => {
             db.collection("Products").replaceOne({ "_id": req.params.id }, req.body)
                 .then((status) => res.status(202).json({ data: status }))
                 .catch(e => res.status(500).json({
-                    error: "Internal Server Error - Failed To patch Task" + e
+                    error: "Internal Server Error - Failed To patch Product" + e
                 }))
         }
     })
@@ -97,9 +97,9 @@ app.patch('/products/:id', (req, res, next) => {
         } else {
 
             db.collection("Products").updateOne({ "_id": req.params.id }, { $set: req.body })
-                .then((taskData) => res.status(202).json({ data: taskData }))
+                .then((productData) => res.status(202).json({ data: productData }))
                 .catch(e => res.status(500).json({
-                    error: "Internal Server Error - Failed To put Task"
+                    error: "Internal Server Error - Failed To put Product"
                 }))
         }
     })
