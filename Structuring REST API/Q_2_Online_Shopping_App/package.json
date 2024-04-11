@@ -1,0 +1,16 @@
+{
+  "name": "struct_rest_api_online_shopping_app",
+  "version": "1.0.0",
+  "description": "This is nodejs assignment",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Darshan Prajapati",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0"
+  }
+}
